@@ -1,0 +1,152 @@
+.welcome-screen {
+    text-align: center;
+  }
+  
+  .welcome-screen button {
+    margin-top: 20px;
+    font-size: 20px;
+    
+  }
+  
+  .welcome-screen input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .btnChat {
+    border: 2px solid;;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    
+  }
+
+  .btnChat:hover {
+    background-color:#65a2c6 ;
+  }
+  
+  .chat {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 10px solid rgba(166, 217, 214, 0);
+    margin-top: 20px;
+
+  }
+  
+  .chat .users-list {
+    width: 300px;
+    border-right: 3px solid rgb(37, 38, 38);
+  }
+  
+  .chat .users-list .active {
+    background: #92d6cb37;
+  }
+  
+  .chat .users-list div {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border: #000000;
+    border-radius: 10px;
+  }
+  
+  .chat .users-list div:hover {
+    background: #00000044;
+  }
+  
+  .chat .has-new-notification:after {
+    content: "💠";
+    display: inline-block;
+  }
+  
+  .chat {
+    width: 100%;
+    position: static;
+    color: #00000050;
+    border-radius: 5px;
+    margin: 10px;
+    border: 4px #65a2c6
+  }
+
+  .messages {
+    width: 100%;
+    position: static;
+    color: #000000d8;
+    border-radius: 5px; 
+    margin: 10px;
+  }
+  
+  .chat .messages-list {
+    height: calc(95% - 60px);
+    border-radius: 10px;
+    
+  }
+  
+
+  .messages-list > * {
+    display: flex;
+    border: 2px solid rgb(62, 83, 110);
+    border-radius: 5px;
+    margin: 5px;
+  } 
+  
+  .chat input {
+    width: 90%;
+    box-sizing:content-box;
+    margin-left: 20px;
+    height: 30px;
+  }
+  
+  .chat .current-user {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  
+  }
+
+  .bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(21, 57, 97) 0%, 
+          rgb(230, 230, 230) 25%, 
+          rgb(57, 125, 167) 51%, 
+          rgb(184, 201, 221) 100%
+    );  
+    animation: AnimateBG 10s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+  a:link{
+    
+    color: #181b1b;
+    padding: 4px;
+    background-color: rgb(27, 29, 29);
+    border: medium solid #181b1b;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  a:hover{
+    background-color: #65a2c6;
+    transition-duration: 0.4s;
+  }

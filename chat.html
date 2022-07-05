@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chatRoom</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+      html * {
+        font-size: 16px;
+        line-height: 1.625;
+        font-family: monospace;
+      }
+    </style>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+  <div class="bg">
+    <div class="welcome-screen">
+      <h1>Username</h1>
+      <div>
+        <input type="text" />
+      </div>
+      <div>
+        <button class="btnChat">chat</button>
+      </div>
+    </div>
+    <div class="chat hidden">
+      <div class="users-list"></div>
+      <div class="messages">
+        <div class="current-user"></div>
+        <div class="messages-list"></div>
+        <input type="text" placeholder="Type your message" class="hidden" />
+        
+      </div>
+    </div>
+  </div>
+    <script src="/welcome.js"></script>
+    <script src="/chat.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
